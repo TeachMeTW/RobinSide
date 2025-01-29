@@ -71,24 +71,33 @@ const Hero = () => {
     <section className="min-h-screen w-full flex relative" id="home">
       {/* LEFT COLUMN: "Main Menu" */}
       <div className="w-1/3 flex flex-col justify-center px-4 py-6 z-10">
-        <h1 className="text-3xl font-bold text-pink-200 mb-6 font-oswald">Main Menu</h1>
+        {/* New Bigger Title */}
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-8 font-oswald">
+          Welcome to <span className="text-pink-500 relative sparkle">RobinSide</span>
+        </h1>
+
+        {/* Updated "Main Menu" as h2 */}
+        <h2 className="text-3xl font-bold text-pink-200 mb-6 font-oswald">
+          Main Menu
+        </h2>
         
         {/* Navigation Links with Individual Pink Boxes */}
         <div className="flex flex-col space-y-4">
-          {/* Home */}
-          <a href="#home" className="block focus:outline-none focus:ring-2 focus:ring-pink-400">
-            <div className="bg-pink-500/20 rounded-lg p-4 hover:bg-pink-500/30 transition-colors">
-              <span className="text-xl text-white hover:text-pink-400 transition-colors font-oswald">
-                Home
-              </span>
-            </div>
-          </a>
-
+          
           {/* About */}
           <a href="#about" className="block focus:outline-none focus:ring-2 focus:ring-pink-400">
             <div className="bg-pink-500/20 rounded-lg p-4 hover:bg-pink-500/30 transition-colors">
               <span className="text-xl text-white hover:text-pink-400 transition-colors font-oswald">
                 About
+              </span>
+            </div>
+          </a>
+
+          {/* Projects */}
+          <a href="#projects" className="block focus:outline-none focus:ring-2 focus:ring-pink-400">
+            <div className="bg-pink-500/20 rounded-lg p-4 hover:bg-pink-500/30 transition-colors">
+              <span className="text-xl text-white hover:text-pink-400 transition-colors font-oswald">
+                Projects
               </span>
             </div>
           </a>
@@ -102,6 +111,14 @@ const Hero = () => {
             </div>
           </a>
 
+          {/* Exit Link */}
+          <a href="https://robinttw.com" className="block focus:outline-none focus:ring-2 focus:ring-pink-400">
+            <div className="bg-pink-500/20 rounded-lg p-4 hover:bg-pink-500/30 transition-colors">
+              <span className="text-xl text-white hover:text-pink-400 transition-colors font-oswald">
+                Exit to RobinTTW
+              </span>
+            </div>
+          </a>
           
         </div>
       </div>
@@ -124,7 +141,6 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>
-
       </div>
     </section>
   );
