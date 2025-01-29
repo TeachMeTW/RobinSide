@@ -1,0 +1,11 @@
+/* src/styles/Hero.css */
+
+.hero-background {
+    background-image: url('/assets/back.png'); /* Path to your image in public/assets */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    /* Optional: Add a fallback background color */
+    background-color: #000; /* Fallback color in case the image fails to load */
+  }
+  
